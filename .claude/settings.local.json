@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip3 list *)",
+      "Bash(python3 -m venv .venv)",
+      "Bash(echo \"exit: $?\")",
+      "Bash(sudo -n apt-get install -y python3.10-venv python3-pip)",
+      "Bash(python3 -m pip --version)",
+      "Bash(python3 -m ensurepip --version)",
+      "Bash(curl -sS -L -o get-pip.py https://bootstrap.pypa.io/get-pip.py)",
+      "Bash(python3 /tmp/claude-1000/-home-empiric-Downloads-projeduguide/8d0293d8-b5d3-4e43-9e97-18cc8a64cb9d/scratchpad/get-pip.py --user)",
+      "Bash(python3 -m venv --without-pip .venv)",
+      "Bash(echo \"venv exit: $?\")",
+      "Bash(./.venv/bin/python __TRACKED_VAR__/get-pip.py)",
+      "Bash(echo \"pip exit: $?\")",
+      "Bash(./.venv/bin/python -m pip --version)",
+      "Bash(./.venv/bin/streamlit run *)",
+      "Bash(echo \"pid $!\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:8501)",
+      "Bash(./.venv/bin/python -c ' *)",
+      "Bash(kill 14590)"
+    ]
+  }
+}

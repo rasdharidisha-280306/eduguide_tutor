@@ -1,0 +1,5 @@
+pymupdf
+streamlit
+google-generativeai
+python-dotenv
+numpy
