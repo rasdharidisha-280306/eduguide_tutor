@@ -19,6 +19,7 @@ class LLMService:
         """Generates multiple-choice quiz questions returning a clean structured list."""
         if not self.api_key:
             raise ValueError("❌ GEMINI_API_KEY is not configured inside environment properties.")
+            Error executing summary abstraction routine: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.
         if not text_content or len(text_content.strip()) == 0:
             return []
 
